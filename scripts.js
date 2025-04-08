@@ -1,9 +1,14 @@
 let body = document.querySelector("body")
-document.querySelector(".tenis-imagem")
+let tenis = document.querySelector(".imagem-tenis")
 
 
-function mudarVisual(cor,imagem){
+function mudarVisual(cor, imagem){
+    tenis.classList.add("troca-efeito")
 
-    body.style.background = cor
-    tenis.src=Imagem
+    body.style.background=cor
+
+    setTimeout(() => {
+        tenis.src = imagem
+        tenis.classlist.remove("troca-efeito")
+    }, 500);
 }
