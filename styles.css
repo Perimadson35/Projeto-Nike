@@ -176,26 +176,13 @@ p {
     }
 
     .botoes {
-        width: 40px;
-        height: 40px;
+        width: 10px;
+        height: 10px;
     }
 
     .logo {
         width: 60px;
         margin-bottom: 20px;
     }
-
-    .botao-carrinho {
-        position: fixed;
-        bottom: 20px;       /* Distância da parte de baixo */
-        right: 20px;        /* Alinhar à direita (pode ser left se preferir) */
-        z-index: 0;      /* Fica por cima de outros elementos */
-        background-color: wheat;
-        color: white;
-        padding: 15px 20px;
-        border-radius: 50px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      }
-
     
 }
