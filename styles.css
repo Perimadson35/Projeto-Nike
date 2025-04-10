@@ -166,10 +166,7 @@ p {
         width: 200%;
         max-width: 300px;
         transform: rotate(1deg); /* Remove rotação para melhor encaixe */
-        position: relative; /* ou absolute/fixed dependendo do que quiser */
-        left: 20px; /* move pro lado direito */
-        top: 30px;  /* move pra baixo */
-        margin: 0 auto; /* centraliza se estiver dentro de um bloco */
+    
     }
 
     .caixa-botoes {
