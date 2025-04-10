@@ -3,7 +3,7 @@ body {
     padding: 0;
     background: #ccee66;
     color: white;
-    padding: 20px 160px;
+    padding:  15px 160px;
     height: 100vh;
     font-family: "Noto Sans", sans-serif;
     overflow: hidden;
@@ -34,15 +34,17 @@ body::after {
 
 .logo {
     width: 80px;
-    
+    position: relative;
+   
 }
 
 h4 {
     font-size: 30px;
+    margin-top: 55px;
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 60px;
 }
 
 
@@ -81,8 +83,9 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 75%;
-    position: relative;
+    height: 65%;
+    position: absolute;
+    top:70px;
     z-index: 1;
 }
 
@@ -92,14 +95,15 @@ p {
 
 .caixa-botoes {
     z-index: 2;
-    position: relative;
+    position: absolute;
+    bottom: 0;
     display: flex;
     gap: 20px;
 }
 
 .botoes {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     cursor: pointer;
 }
