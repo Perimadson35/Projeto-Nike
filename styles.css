@@ -67,7 +67,11 @@ p {
     opacity: 0.7;
 }
 
-  
+img {
+    width: 100%; /* A imagem vai ocupar 100% do seu contêiner */
+    height: auto; 
+}
+
 .imagem-tenis {
     width: 800px;
     transform: rotate(-25deg);
