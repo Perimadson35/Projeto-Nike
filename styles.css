@@ -176,8 +176,11 @@ p {
     }
 
     .botoes {
-        width: 10px;
-        height: 10px;
+        width: 15px;
+        height: 15px;
+        position: static;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .logo {
