@@ -165,12 +165,12 @@ p {
     .imagem-tenis {
         width: 100%;
         max-width: 300px;
-        transform: rotate(0deg); /* Remove rotação para melhor encaixe */
+        transform: rotate(1deg); /* Remove rotação para melhor encaixe */
     }
 
     .caixa-botoes {
         position: static;
-        margin-top: 30px;
+        margin-top: 10px;
         justify-content: center;
         flex-wrap: wrap;
     }
@@ -184,4 +184,6 @@ p {
         width: 60px;
         margin-bottom: 20px;
     }
+
+    
 }
