@@ -164,7 +164,7 @@ p {
 
     .imagem-tenis {
         width: 100%;
-        max-width: 300px;
+        max-width: 200px;
         transform: rotate(1deg); /* Remove rotação para melhor encaixe */
     }
 
@@ -178,9 +178,7 @@ p {
     .botoes {
         width: 15px;
         height: 15px;
-        position: static;
-        justify-content: center;
-        flex-wrap: wrap;
+        
     }
 
     .logo {
