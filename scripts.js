@@ -1,12 +1,22 @@
-const body = document.querySelector("body");
-const tenis = document.querySelector(".imagem-tenis");
+let body = document.querySelector("body")
+let imagemTenis = document.querySelector(".imagem-tenis")
+let botaoCarrinho = document.querySelector(".botao-carrinho")
 
-// document=html
-// queryselector=pegador/selecionador
+// document = html
+// querySelector = pegador / selecionador
 
+function mudarVisual(cor, imagem, corBotao){
+    imagemTenis.classList.add("troca-efeito")
 
-function mudarVisual(cor, imagem){
-    tenis.src= imagem;
-    body.style.background=cor
+    body.style.background = cor
+    
+    botaoCarrinho.style.background = corBotao
 
+    // contador de tempo
+    setTimeout(() =>{
+        imagemTenis.src = imagem
+        imagemTenis.classList.remove("troca-efeito")
+    }, 500)
+
+    // 1000 milisegundos = 1segundo
 }

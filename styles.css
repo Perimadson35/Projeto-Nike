@@ -2,9 +2,10 @@ body {
     margin: 0;
     padding: 0;
     background: #ccee66;
-    color: white;
-    padding:  15px 160px;
+    color: #ffffff;
+    padding: 15px 160px;
     height: 100vh;
+    overflow: hidden;
     font-family: "Noto Sans", sans-serif;
     overflow: hidden;
 }
@@ -12,12 +13,13 @@ body {
 body::before {
     content: '';
     background: #202020;
-    width: 100%;
-    height: 120%;
     position: absolute;
     top: 0;
-    left: -600px;
-    transform: rotate(-70deg);
+    right: 595px;
+    transform: rotate(-74deg);
+    z-index: -1;
+    width: 100%;
+    height: 120%;
 }
 
 body::after {
@@ -26,175 +28,778 @@ body::after {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
+    color: #000000;
     font-size: 250px;
     font-weight: bold;
+    z-index: -1;
     opacity: 0.5;
-    
 }
 
-.logo {
+header .logo-img {
     width: 80px;
+    margin-bottom: 15px;
     position: relative;
-   
 }
 
-h4 {
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75%;
+}
+
+.conteudo .texto {
+    max-width: 500px;
+}
+
+.conteudo .texto h4 {
     font-size: 30px;
-    margin-top: 55px;
-}
-
-h1 {
-    font-size: 60px;
-}
-
-
-p {
-    font-size: 16px;
     margin-bottom: 40px;
 }
 
-.botao-carrinho {
-    background: #a3be52;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 16px;
-    color: black;
-    cursor: pointer;
-    transition: 0.5s;
+.conteudo .texto h1 {
+    font-size: 80px;
+    margin-bottom: 40px;
+    line-height: 110px;
 }
 
-.botao-carrinho:hover {
+.conteudo .texto p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.conteudo .texto .botao-carrinho {
+    background: #a3be52;
+    padding: 10px 20px;
+    color: #000000;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.conteudo .texto .botao-carrinho:hover {
     opacity: 0.7;
 }
 
-
-.imagem-tenis {
+.conteudo .caixa-imagem .imagem-tenis {
     width: 800px;
     transform: rotate(-25deg);
     filter: drop-shadow(30px 45px 40px #161616);
     transition: 1s;
 }
 
-.troca-efeito {
+.conteudo .caixa-imagem .troca-efeito {
     opacity: 0;
     transform: rotate(-25deg) translateY(-30px);
 }
 
-.caixa-principal {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 65%;
-    top: 70px;
-    position: absolute;
-    z-index: 2;
-}
-
-.caixa-texto {
-    max-width: 500px;
-}
-
 .caixa-botoes {
-    z-index: 2;
-    position: absolute;
-    bottom: 0;
     display: flex;
     gap: 20px;
 }
 
-.botoes {
-    width: 50px;
-    height: 50px;
+.caixa-botoes .botao {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     cursor: pointer;
+    transition: .4s;
 }
 
-.botoes:active {
+.caixa-botoes .botao:hover {
+    transform: translateY(-5px);
+}
+
+.caixa-botoes .botao:active {
     opacity: 0.6;
 }
 
-.verde {
+.caixa-botoes .verde {
     background: #ccee66;
 }
 
-.azul {
+.caixa-botoes .azul {
     background: #58cced;
 }
 
-.rosa {
+.caixa-botoes .rosa {
     background: #ff9eb5;
 }
 
-@media (max-width: 768px) {
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    min-width: 100vw;
+    bottom: 20px;
+}
+
+footer .redes-sociais {
+    display: flex;
+    gap: 20px;
+}
+
+footer .redes-sociais i {
+    color: #ffffff;
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-shadow: 4px 4px 8px rgb(0, 0, 0, 0.5);
+}
+
+footer .copyright {
+    text-shadow: 4px 4px 8px rgb(0, 0, 0, 0.8);
+}
+
+@media (max-width: 1180px) and (orientation: landscape) {
     body {
-        padding: 20px;
-        overflow: auto; /* Permite rolagem no celular */
+        padding: 0;
+        padding: 20px 52px;
+    }
+
+    body::before {
+        top: -20%;
+        right: 39%;
+    }
+
+    body::after {
+        font-size: 165px;
+    }
+
+    .conteudo {
+        height: 75%;
+    }
+
+    .conteudo .texto {
+        width: 340px;
+    }
+
+    .conteudo .texto h4 {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    .conteudo .texto h1 {
+        font-size: 75px;
+        line-height: 85px;
+        margin-bottom: 25px;
+    }
+
+    .conteudo .texto p {
+        margin-bottom: 20px;
+    }
+
+    .conteudo .caixa-imagem {
+        margin-top: 150px;
+    }
+
+    .conteudo .caixa-imagem .imagem-tenis {
+        width: 600px;
+    }
+
+    .caixa-botoes .botao {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 1040px) and (orientation: landscape) {
+    body::before {
+        right: 28%;
+    }
+
+    body::after {
+        font-size: 120px;
+    }
+
+    header .logo-img {
+        width: 55px;
+        margin-bottom: 10px;
+    }
+
+    .conteudo {
+        height: 68%;
+    }
+
+    .conteudo .texto {
+        width: 320px;
+    }
+
+    .conteudo .texto h4 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .conteudo .texto h1 {
+        font-size: 45px;
+        line-height: 48px;
+        margin-bottom: 10px;
+    }
+
+    .conteudo .texto p {
+        margin-bottom: 10px;
+    }
+
+    .conteudo .caixa-imagem {
+        margin-top: 60px;
+    }
+
+    .conteudo .caixa-imagem .imagem-tenis {
+        width: 500px;
+    }
+
+    .caixa-botoes {
+        margin-top: 15px;
+    }
+
+    .caixa-botoes .botao {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer {
+        gap: 5px;
+    }
+
+    footer .redes-sociais i {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 962px) and (orientation: landscape) {
+    body {
+        padding: 0;
+        padding: 20px 48px;
+    }
+
+    body::after {
+        font-size: 100px;
+    }
+
+    header .logo-img {
+        margin-bottom: 10px;
+    }
+
+    .conteudo .texto h4 {
+        margin-bottom: 5px;
+    }
+
+    .conteudo .texto h1 {
+        font-size: 42px;
+        line-height: 42px;
+    }
+
+    .conteudo .caixa-imagem .imagem-tenis {
+        width: 430px;
+    }
+}
+
+@media (max-width: 896px) and (orientation: landscape) {
+    body {
+        padding: 0;
+        padding: 15px 40px;
+    }
+
+    .conteudo {
+        height: 65%;
+    }
+    
+    .conteudo .texto {
+        width: 290px;
+    }
+
+    .conteudo .texto h4 {
+        margin-bottom: 8px;
+    }
+
+    .conteudo .texto h1 {
+        font-size: 36px;
+        margin-bottom: 8px;
+    }
+    
+    .conteudo .texto p {
+        font-size: 13px;
+    }
+    
+    .conteudo .caixa-imagem {
+        margin-top: 45px;
+    }
+
+    .conteudo .caixa-imagem .imagem-tenis {
+        width: 390px;
+    }
+
+    .conteudo .texto .botao-carrinho {
+        font-size: 14px;
+    }
+
+    .caixa-botoes {
+        margin-top: 12px;
+    }
+
+    footer {
+        bottom: 15px;
+    }
+
+    footer .copyright {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 873px) and (orientation: landscape) {
+    body::before {
+        height: 170%;
+        right: 39%;
+    }
+
+    body::after {
+        font-size: 58px;
+    }
+
+    header .logo-img {
+        width: 45px;
+    }
+
+    .conteudo {
+        height: 50%;
+    }
+    
+    .conteudo .texto {
+        width: 350px;
+    }
+
+    .conteudo .texto h4 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .conteudo .texto h1 {
+        margin-bottom: 5px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .conteudo .texto p {
+        font-size: 12px;
+    }
+
+    .conteudo .caixa-imagem {
+        margin-top: 0px;
+    }
+
+    .conteudo .texto .botao-carrinho {
+        padding: 7px 14px;
+        font-size: 13px;
+    }
+
+    .caixa-botoes {
+        margin-top: 15px;
+    }
+
+    .caixa-botoes .botao {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 852px) and (orientation: landscape) {
+    body::before {
+        right: 40%;
+    }
+    
+    body::after {
+        font-size: 80px;
+    }
+    
+    .conteudo .texto h4 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .conteudo .texto .botao-carrinho {
+        font-size: 13px;
+        padding: 7px 14px;
+    }
+
+    .caixa-botoes .botao {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 820px) {
+    body {
+        padding: 0;
+        padding: 20px 50px;
+    }
+
+    body::before {
+        transform: rotate(80deg);
+        top: -44.5%;
+        right: 0;
+    }
+
+    body::after {
+        font-size: 165px;
+    }
+
+    .conteudo {
+        flex-direction: column;
+    }
+
+    .conteudo .texto h4 {
+        margin-bottom: 25px;
+    }
+
+    .conteudo .texto h1 {
+        font-size: 75px;
+        text-align: center;
+        line-height: 85px;
+        margin-bottom: 25px;
+    }
+
+    .conteudo .texto p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .conteudo .texto .botao-carrinho {
+        position: absolute;
+        left: 0;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .conteudo .caixa-imagem .imagem-tenis {
+        width: 600px;
+    }
+
+    .caixa-botoes {
+        position: absolute;
+        top: 0;
+        right: 50px;
+        height: 100vh;
+        margin-top: 25%;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .caixa-botoes .botao {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    body::before {
+        top: -50%;
+        right: 0;
+    }
+
+    body::after {
+        font-size: 150px;
+    }
+
+    .conteudo .texto h1 {
+        text-align: center;
+        font-size: 60px;
+        line-height: 80px;
+        margin-bottom: 20px;
+    }
+
+    .conteudo .texto p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .conteudo .caixa-imagem .imagem-tenis {
+        width: 530px;
+    }
+
+    .caixa-botoes {
+        position: absolute;
+        top: 0;
+        right: 50px;
+        height: 100vh;
+        margin-top: 25%;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .caixa-botoes .botao {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 608px) {
+    body {
+        padding: 0;
+        padding: 20px 35px;
+    }
+
+    body::before {
+        top: -45%;
+        right: 0;
+        transform: rotate(80deg);
+    }
+
+    body::after {
+        font-size: 138px;
+    }
+
+    .conteudo .texto {
+        width: 420px;
+    }
+
+    .conteudo .texto h4 {
+        font-size: 25px;
+        margin-bottom: 12px;
+    }
+
+    .conteudo .texto h1 {
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 12px;
+    }
+
+    .conteudo .texto p {
+        margin-bottom: 12px;
+    }
+
+    .conteudo .caixa-imagem .imagem-tenis {
+        width: 480px;
+    }
+
+    .caixa-botoes {
+        right: 35px;
+    }
+}
+
+@media (max-width: 581px) {
+    header .logo-img {
+        width: 60px;
+        margin-bottom: 5px;
+    }
+
+
+    body::before {
+        top: -48%;
+    }
+
+    body::after {
+        font-size: 122px;
+    }
+
+    .conteudo .texto {
+        width: 390px;
+    }
+
+    .conteudo .texto h4 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .conteudo .texto h1 {
+        font-size: 45px;
+        line-height: 47px;
+        margin-bottom: 10px;
+    }
+
+    .conteudo .texto p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .conteudo .caixa-imagem .imagem-tenis {
+        width: 430px;
+        position: relative;
+        top: 12px;
+    }
+
+    .caixa-botoes {
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 526px) {
+    body {
+        padding: 0;
+        padding: 20px 30px;
+    }
+
+    body::before {
+        top: -39%;
+        width: 120%;
+    }
+
+    header .logo-img {
+        margin-bottom: 20px;
+    }
+
+    .conteudo .texto {
+        width: 350px;
+        margin-top: 20px;
+    }
+
+    .conteudo .texto h4 {
+        margin-bottom: 20px;
+    }
+
+    .conteudo .texto h1 {
+        margin-bottom: 20px;
+        line-height: 55px;
+    }
+
+    .conteudo .texto p {
+        margin-bottom: 20px;
+    }
+
+    .caixa-botoes {
+        margin-top: 35%;
+        right: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    body::before {
+        top: -40%;
+    }
+
+    body::after {
+        font-size: 115px;
+    }
+
+    header .logo-img {
+        margin-bottom: 10px;
+    }
+
+    .conteudo .texto {
+        margin-top: 0;
+        width: 300px;
+    }
+
+    .conteudo .texto h4 {
+        margin-bottom: 15px;
+    }
+
+    .conteudo .texto h1 {
+        font-size: 42px;
+        margin-bottom: 15px;
+        line-height: 50px;
+    }
+
+    .conteudo .texto p {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 414px) {
+    body {
+        padding: 0;
+        padding: 20px 25px;
+    }
+
+    body::before {
+        top: -37%;
+    }
+
+    header .logo-img {
+        width: 55px;
+    }
+
+    .conteudo .texto {
+        width: 260px;
+    }
+
+    .conteudo .texto h1 {
+        font-size: 36px;
+    }
+
+    .conteudo .texto p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .conteudo .texto .botao-carrinho {
+        font-size: 14px;
+    }
+
+    .conteudo .caixa-imagem .imagem-tenis {
+        width: 380px;
+    }
+
+    .caixa-botoes {
+        right: 25px;
+    }
+
+    footer .redes-sociais i {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 393px) and (orientation: portrait) {
+    body {
+        overflow: hidden;
+    }
+    
+    body {
+        padding: 0;
+        padding: 12px 20px;
+    }
+
+    body::before {
+        top: -44%;
     }
 
     body::after {
         font-size: 80px;
     }
 
-    .caixa-principal {
-        flex-direction: column; /* Empilha os elementos */
-        align-items: center;
-        text-align: center;
-        position: static;
-        height: auto;
+    header .logo-img {
+        margin-bottom: 0px;
     }
 
-    .caixa-texto {
-        max-width: 100%;
+    .conteudo .texto h4 {
+        font-size: 20px;
+        margin-bottom: 3px;
     }
 
-    h1 {
-        font-size: 36px;
+    .conteudo .texto h1 {
+        margin-bottom: 3px;
+        line-height: 45px;
     }
 
-    h4 {
-        font-size: 22px;
-        margin-top: 30px;
+    .conteudo .texto p {
+        font-size: 13.5px;
+        line-height: 18px;
+        margin-bottom: 5px;
     }
 
-    p {
-        font-size: 14px;
-        margin-bottom: 20px;
+    .conteudo .caixa-imagem .imagem-tenis {
+        width: 340px;
     }
 
-    .imagem-tenis {
-        width: 200%;
-        max-width: 300px;
-        transform: rotate(1deg); /* Remove rotação para melhor encaixe */
-    
+    .conteudo .texto .botao-carrinho {
+        font-size: 13px;
+        padding: 7px 14px;
     }
 
     .caixa-botoes {
-        position: static;
-        margin-top: 40px;
-        justify-content: center;
-        flex-wrap: wrap;
+        right: 20px;
+        margin-top: 30%;
     }
 
-    .botoes {
-        width: 40px;
-        height: 40px;
-        
+    .caixa-botoes .botao {
+        width: 32px;
+        height: 32px;
     }
-
-    .logo {
-        width: 60px;
-        margin-bottom: 20px;
-    }
-
-    @media (max-width: 768px) {
-        .botao-carrinho {
-          position: fixed;
-          bottom: 50;
-          left: 50;
-          width: 100%;
-        }
-      }
-      
-    
 }
