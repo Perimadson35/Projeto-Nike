@@ -3,72 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nike | Perimadson</title>
     <link rel="stylesheet" href="./styles.css">
-    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <title>Nike</title>
 </head>
 
 <body>
-    <header>
-        <img class="logo-img" src="./img/logo.png" alt="logo-nike" />
-    </header>
-
-    <div class="conteudo">
-        <div class="texto">
-            <h4>R$ 799,00</h4>
-
+    <main>
+        <div class="div-left">
+            <h3 class="preco">R$ 799,99</h3>
             <h1>Nike Air Zoom</h1>
-
-            <p>
-                Uma passada elástica para qualquer corrida, a sensação familiar e perfeita do Peg retorna para ajudá-lo
-                a
-                atingir seus objetivos.
-                Esta versão tem a mesma capacidade de resposta e super neutro que você adora, mas com melhor conforto
-                nas áreas
-                sensíveis do seu pé,
-                como o arco e os dedos.
-            </p>
-
-            <button class="botao-carrinho">
-                Adicionar ao Carrinho
-                <i class="fa-solid fa-cart-shopping"></i>
-            </button>
+            <p class="paragrafo-principal">Uma passada elástica para qualquer corrida, a sensação familiar e perfeita do
+                Peg retorna para ajudá-lo a atingir seus objetivos. Esta versão tem a mesma capacidade de resposta e
+                suporte neutro que você adora, mas com melhor conforto nas áreas sensíveis do seu pé, como o arco e os
+                dedos.</p>
+            <button class="button-main">Adicionar ao Carrinho</button>
+            <div class="tenis-button">
+                <button onclick="mudarVisual('verde')" class="tenis-verde"></button>
+                <button onclick="mudarVisual('rosa')" class="tenis-rosa"></button>
+                <button onclick="mudarVisual('azul')" class="tenis-azul"></button>
+            </div>
+            <div class="div-tenis-nike">
+                <img src="./img/nike1.png" alt="tenis-nike" class="tenis-nike">
+            </div>
         </div>
 
-        <div class="caixa-imagem">
-            <img class="imagem-tenis" src="./img/nike1.png" alt="imagem-tenis" />
-        </div>
-    </div>
 
-    <div class="caixa-botoes">
-        <div class="botao verde" onclick="mudarVisual('#ccee66', 'img/nike1.png', '#a3be52')"></div>
-        <div class="botao azul" onclick="mudarVisual('#58cced', 'img/nike2.png', '#40a2bd')"></div>
-        <div class="botao rosa" onclick="mudarVisual('#ff9eb5', 'img/nike3.png', '#db7d93')"></div>
-    </div>
+    </main>
 
-    <footer>
-        <div class="redes-sociais">
-            <a href="https://www.instagram.com/perimadson?igsh=ZDA2ZzFyZTlja3Nx" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
 
-            <a href="https://github.com/Perimadson35" target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/perimadson-araujo/" target="_blank">
-                <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-        </div>
-        <p class="copyright">&copy; Desenvolvido por: Perimadson Araujo Machado</p>
-    </footer>
+
+
 </body>
-<script src="https://kit.fontawesome.com/5a5a4d1721.js" crossorigin="anonymous"></script>
+
 <script src="./script.js"></script>
 
 </html>
