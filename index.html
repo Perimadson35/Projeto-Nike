@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!--  VERSÃO DO HTML / 5 -->
+<html lang="pt-br"> <!-- DENTRO FICA O MEU SITE -->
 
 <head>
     <meta charset="UTF-8">
@@ -9,37 +9,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <title>Nike</title>
+    <title>Nike DevClub</title>
 </head>
 
 <body>
-    <main>
-        <div class="div-left">
-            <h3 class="preco">R$ 799,99</h3>
+    <img src="img/logo.png" class="logo">
+
+    <div class="caixa-principal">
+        <div class="caixa-texto">
+            <h4>R$ 799,00</h4>
+
             <h1>Nike Air Zoom</h1>
-            <p class="paragrafo-principal">Uma passada elástica para qualquer corrida, a sensação familiar e perfeita do
-                Peg retorna para ajudá-lo a atingir seus objetivos. Esta versão tem a mesma capacidade de resposta e
-                suporte neutro que você adora, mas com melhor conforto nas áreas sensíveis do seu pé, como o arco e os
-                dedos.</p>
-            <button class="button-main">Adicionar ao Carrinho</button>
-            <div class="tenis-button">
-                <button onclick="mudarVisual('verde')" class="tenis-verde"></button>
-                <button onclick="mudarVisual('rosa')" class="tenis-rosa"></button>
-                <button onclick="mudarVisual('azul')" class="tenis-azul"></button>
-            </div>
-            <div class="div-tenis-nike">
-                <img src="./img/nike1.png" alt="tenis-nike" class="tenis-nike">
-            </div>
+
+            <p>
+                Uma passada elástica para qualquer corrida, a sensação familiar e perfeita do Peg retorna para ajudá-lo
+                a
+                atingir seus objetivos. Esta versão tem a mesma capacidade de resposta e suporte neutro que você adora,
+                mas
+                com
+                melhor conforto nas áreas sensíveis do seu pé, como o arco e os dedos.
+            </p>
+
+            <a class="botao-carrinho">
+                Adicionar ao Carrinho
+            </a>
         </div>
 
+        <div class="caixa-imagem">
+            <img src="img/nike1.png" class="imagem-tenis">
+        </div>
+    </div>
 
-    </main>
-
-
-
+    <div class="caixa-botoes">
+        <div onclick="mudarVisual('#ccee66', 'img/nike1.png')" class="botoes verde"></div>
+        
+        <div onclick="mudarVisual('#ff9eb5', 'img/nike3.png')" class="botoes rosa"></div>
+        
+        <div onclick="mudarVisual('#58cced', 'img/nike2.png')" class="botoes azul"></div>
+    </div>
 
 </body>
-
-<script src="./script.js"></script>
+<script src="scripts.js"></script>
 
 </html>

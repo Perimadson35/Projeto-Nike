@@ -1,62 +1,19 @@
-const imagens = [
-    './img/img-fundo-verde.jpg',
-    './img/img-fundo-rosa.jpg',
-    './img/img-fundo-azul.jpg',
-    './img/img-fundo-verde-mobile.jpg',
-    './img/img-fundo-rosa-mobile.jpg',
-    './img/img-fundo-azul-mobile.jpg',
-    './img/nike1.png',
-    './img/nike2.png',
-    './img/nike3.png'
-];
+let body = document.querySelector("body");
+let tenis = document.querySelector(".imagem-tenis");
 
-imagens.forEach(src => {
-    const img = new Image();
-    img.src = src;
-});
+function mudarVisual(cor, imagem) {
+    // Evitar que a animação seja chamada várias vezes antes de terminar a anterior
+    if (tenis.classList.contains("troca-efeito")) return;
 
+    // Adicionando o efeito de troca
+    tenis.classList.add("troca-efeito");
 
-let main = document.querySelector("main")
+    // Alterando a cor do fundo
+    body.style.background = cor;
 
-let tenis = document.querySelector(".tenis-nike")
-
-function mudarVisual(cor) {
-    tenis.classList.add("sobe");
-
-    // Define o caminho base das imagens
-    const fundos = {
-        verde: {
-            desktop: './img/img-fundo-verde.jpg',
-            mobile: './img/img-fundo-verde-mobile.jpg',
-            tenis: './img/nike1.png'
-        },
-        rosa: {
-            desktop: './img/img-fundo-rosa.jpg',
-            mobile: './img/img-fundo-rosa-mobile.jpg',
-            tenis: './img/nike3.png'
-        },
-        azul: {
-            desktop: './img/img-fundo-azul.jpg',
-            mobile: './img/img-fundo-azul-mobile.jpg',
-            tenis: './img/nike2.png'
-        }
-    };
-
-    // Detecta se está no mobile
-    const isMobile = window.innerWidth <= 930;
-
-    // Aplica imagem de fundo correta
-    const imagemFundo = isMobile ? fundos[cor].mobile : fundos[cor].desktop;
-    main.style.backgroundImage = `url(${imagemFundo})`;
-
-    // Troca a imagem do tênis com animação
+    // Após 500ms, alteramos a imagem e removemos o efeito
     setTimeout(() => {
-        tenis.src = fundos[cor].tenis;
-        tenis.classList.remove("sobe");
-        tenis.classList.add("desce");
-
-        setTimeout(() => {
-            tenis.classList.remove("desce");
-        }, 500);
-    }, 500);
+        tenis.src = imagem;
+        tenis.classList.remove("troca-efeito");
+    }, 500); // Tempo da transição do efeito
 }
