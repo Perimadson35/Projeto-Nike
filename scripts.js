@@ -17,3 +17,4 @@ function mudarVisual(cor, imagem) {
         tenis.classList.remove("troca-efeito");
     }, 500); // Tempo da transição do efeito
 }
+
