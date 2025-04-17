@@ -150,74 +150,74 @@ p {
 
 @media (max-width: 1024px) {
     h1 {
-        font-size: 60px;
+        font-size: 60px; /* Tamanho do título principal */
     }
 
     .imagem-tenis {
-        transform: rotate(-15deg);
+        transform: rotate(-15deg); /* Rotação da imagem do tênis */
     }
 }
 
 @media (max-width: 768px) {
     .caixa-principal {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        flex-direction: column; /* Altera a direção do flexbox para coluna */
+        align-items: center; /* Centraliza itens */
+        text-align: center; /* Centraliza texto */
     }
 
     .imagem-tenis {
-        width: 80%;
-        transform: rotate(0deg);
+        width: 80%; /* Largura da imagem do tênis */
+        transform: rotate(0deg); /* Remove a rotação */
     }
 
     h1 {
-        font-size: 48px;
+        font-size: 48px; /* Tamanho do título principal */
     }
 
     h4 {
-        font-size: 24px;
+        font-size: 24px; /* Tamanho do subtítulo */
     }
 
     .botao-carrinho {
-        font-size: 14px;
-        padding: 12px 18px;
+        font-size: 14px; /* Tamanho do botão do carrinho */
+        padding: 12px 18px; /* Espaçamento do botão */
     }
 
     p {
-        font-size: 14px;
+        font-size: 14px; /* Tamanho do parágrafo */
     }
 }
 
 @media (max-width: 480px) {
     body::after {
-        font-size: 150px;
+        font-size: 150px; /* Pode ser uma boa ideia revisar este estilo */
     }
 
     h1 {
-        font-size: 36px;
+        font-size: 36px; /* Tamanho do título principal */
     }
 
     h4 {
-        font-size: 20px;
+        font-size: 20px; /* Tamanho do subtítulo */
     }
 
     p {
-        font-size: 13px;
-        margin-bottom: 20px;
+        font-size: 13px; /* Tamanho do parágrafo */
+        margin-bottom: 20px; /* Margem abaixo do parágrafo */
     }
 
     .imagem-tenis {
-        width: 90%;
+        width: 90%; /* Largura da imagem do tênis */
     }
 
     .botoes {
-        width: 50px;
-        height: 50px;
+        width: 50px; /* Tamanho dos botões */
+        height: 50px; /* Altura dos botões */
     }
 
     .botao-carrinho {
-        font-size: 13px;
-        padding: 10px 16px;
+        font-size: 13px; /* Tamanho do botão do carrinho */
+        padding: 10px 16px; /* Espaçamento do botão */
     }
 }
 
