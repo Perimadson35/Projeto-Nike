@@ -153,80 +153,67 @@ p {
 /* ========== MEDIA QUERIES RESPONSIVAS ========== */
 
 /* Responsividade para telas de até 1024px */
+/* Responsivo para telas até 1024px (notebooks e tablets maiores) */
 @media (max-width: 1024px) {
     h1 {
         font-size: 2em;
-        /* Ajuste para telas médias */
     }
 
     .imagem-tenis {
         transform: rotate(-15deg);
-        /* Exemplo de rotação */
     }
 }
 
-/* Responsividade para tablets e telas médias até 768px */
+/* Responsivo para telas até 768px (tablets) */
 @media (max-width: 768px) {
     .caixa-principal {
         padding: 10px;
-        /* Menos padding em telas menores */
-    }
-
-    .imagem-tenis {
-        width: 80%;
-        /* Largura reduzida da imagem */
-        transform: rotate(0deg);
-        /* Remove rotação */
     }
 
     h1 {
         font-size: 1.5em;
-        /* Ajuste para telas menores */
     }
 
     h4 {
         font-size: 1.2em;
-        /* Ajuste para telas menores */
     }
 
     p {
-        font-size: 0.8em;
-        /* Ajuste para telas menores */
+        font-size: 0.9em;
+    }
+
+    .imagem-tenis {
+        width: 80%;
+        transform: rotate(0deg);
     }
 
     .botao-carrinho {
         font-size: 0.9em;
-        /* Ajuste para telas menores */
         padding: 8px 16px;
-        /* Ajuste para telas menores */
     }
 }
 
-/* Responsividade para celulares até 480px */
+/* Responsivo para telas até 480px (celulares) */
 @media (max-width: 480px) {
     h1 {
         font-size: 1.2em;
-        /* Ajuste para telas pequenas */
     }
 
     h4 {
         font-size: 1em;
-        /* Ajuste para telas pequenas */
     }
 
     p {
         font-size: 0.8em;
-        /* Ajuste para telas pequenas */
         margin-bottom: 15px;
-        /* Margem abaixo do parágrafo */
     }
 
     .imagem-tenis {
         width: 90%;
-        /* Mantém a largura da imagem */
     }
 
     .botao-carrinho {
         font-size: 0.8em;
+        padding: 6px 12px;
     }
 }
