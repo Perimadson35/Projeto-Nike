@@ -150,75 +150,60 @@ p {
 
 @media (max-width: 1024px) {
     h1 {
-        font-size: 60px; /* Tamanho do título principal */
+        font-size: 2em; /* Ajuste para telas médias */
     }
 
     .imagem-tenis {
-        transform: rotate(-15deg); /* Rotação da imagem do tênis */
+        transform: rotate(-15deg); /* Exemplo de rotação */
     }
 }
 
 @media (max-width: 768px) {
     .caixa-principal {
-        flex-direction: column; /* Altera a direção do flexbox para coluna */
-        align-items: center; /* Centraliza itens */
-        text-align: center; /* Centraliza texto */
+        padding: 10px; /* Menos padding em telas menores */
     }
 
     .imagem-tenis {
-        width: 80%; /* Largura da imagem do tênis */
-        transform: rotate(0deg); /* Remove a rotação */
+        width: 80%; /* Largura reduzida da imagem */
+        transform: rotate(0deg); /* Remove rotação */
     }
 
     h1 {
-        font-size: 48px; /* Tamanho do título principal */
+        font-size: 1.5em; /* Ajuste para telas menores */
     }
 
     h4 {
-        font-size: 24px; /* Tamanho do subtítulo */
-    }
-
-    .botao-carrinho {
-        font-size: 14px; /* Tamanho do botão do carrinho */
-        padding: 12px 18px; /* Espaçamento do botão */
+        font-size: 1.2em; /* Ajuste para telas menores */
     }
 
     p {
-        font-size: 14px; /* Tamanho do parágrafo */
+        font-size: 0.9em; /* Ajuste para telas menores */
+    }
+
+    .botao-carrinho {
+        font-size: 0.9em; /* Ajuste para telas menores */
+        padding: 8px 16px; /* Ajuste para telas menores */
     }
 }
 
 @media (max-width: 480px) {
-    body::after {
-        font-size: 150px; /* Pode ser uma boa ideia revisar este estilo */
-    }
-
     h1 {
-        font-size: 36px; /* Tamanho do título principal */
+        font-size: 1.2em; /* Ajuste para telas pequenas */
     }
 
     h4 {
-        font-size: 20px; /* Tamanho do subtítulo */
+        font-size: 1em; /* Ajuste para telas pequenas */
     }
 
     p {
-        font-size: 13px; /* Tamanho do parágrafo */
-        margin-bottom: 20px; /* Margem abaixo do parágrafo */
+        font-size: 0.8em; /* Ajuste para telas pequenas */
+        margin-bottom: 15px; /* Margem abaixo do parágrafo */
     }
 
     .imagem-tenis {
-        width: 90%; /* Largura da imagem do tênis */
-    }
-
-    .botoes {
-        width: 50px; /* Tamanho dos botões */
-        height: 50px; /* Altura dos botões */
+        width: 90%; /* Mantém a largura da imagem */
     }
 
     .botao-carrinho {
-        font-size: 13px; /* Tamanho do botão do carrinho */
-        padding: 10px 16px; /* Espaçamento do botão */
-    }
-}
-
+        font-size: 0.8em; /* Ajust
 
