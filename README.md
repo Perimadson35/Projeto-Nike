@@ -55,13 +55,13 @@ https://perimadson35.github.io/Projeto-Nike/
 
 🙌 Agradecimentos
 Agradeço ao DevClub e ao Rodolfo Mori por esse desafio incrível que me permitiu colocar em prática tudo que venho aprendendo e observar minha própria evolução. Esse tipo de exercício é essencial para quem está em constante aprendizado e evolução na área de tecnologia.
-
+----
 📲 Contato
 Se quiser trocar uma ideia, colaborar ou acompanhar minha evolução, me chama por aqui:
 
 LinkedIn: https://www.linkedin.com/in/perimadson-araujo/
 
-GitHub: 
+GitHub: https://github.com/Perimadson35
 
 ⭐ Se curtir o projeto, deixa uma estrela no repositório! Isso me ajuda bastante :)
 
